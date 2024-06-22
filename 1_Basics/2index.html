@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basics-2</title>
 </head>
+
 <body>
-    
+    <div class="">
+        <p> Write a JavaScript program to get the current date.
+
+        </p>
+        <p>
+            Expected Output :
+            mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+        </p>
+        <ul>
+            <li id="firstformat"></li>
+            <li id="secondformat"></li>
+        </ul>
+    </div>
+    <script>
+        const date = new Date();
+        console.log(date);
+        const firstformat = document.getElementById('firstformat');
+        const secondformat = document.getElementById('secondformat');
+        firstformat.innerHTML = date.getMonth() + `|` + date.getDate() + `|` + date.getFullYear();
+        secondformat.innerHTML = date.getDate() + `|` + date.getMonth() + `|` + date.getFullYear();
+
+
+    </script>
 </body>
+
 </html>

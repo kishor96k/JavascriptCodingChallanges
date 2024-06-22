@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basics-4</title>
 </head>
+
 <body>
-    
+    <div class="">
+        <p>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar</p>
+    </div>
+
+    <script>
+        function leapyear(year) {
+            return (year % 100 === 0) && (year % 4 === 0) && (year % 400 === 0)
+        }
+        console.log(leapyear(2016));
+        console.log(leapyear(100));
+        console.log(leapyear(1600));
+        console.log(leapyear(2024));
+    </script>
 </body>
+
+
 </html>

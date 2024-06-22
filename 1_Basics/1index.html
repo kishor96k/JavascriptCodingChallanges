@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics-1</title>
+</head>
+
+<body>
+    <div class="">
+        <p>Current Day and time</p>
+        <ul>
+            <li>Today Day is <span id="todayday"></span></li>
+            <li>Today Date is <span id="todaydate"></span></li>
+        </ul>
+    </div>
+    <script>
+        const date = new Date();
+        console.log(date);
+        const todayday = document.getElementById('todayday');
+        const todaydate = document.getElementById('todaydate');
+        todayday.innerText=date.getDay();
+        todaydate.innerText=date.getDate();
+    </script>
+
+</body>
+
+</html>
